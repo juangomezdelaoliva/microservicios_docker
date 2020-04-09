@@ -4,7 +4,7 @@ MAINTAINER jpacheco@autentia.com
 
 RUN yum install -y java
 VOLUME /tmp
-ADD microservicio_deployment.jar app.jar
+ADD target/microservicio_deployment.jar app.jar
 
 RUN sh -c 'touch /app.jar'
 EXPOSE 8081
